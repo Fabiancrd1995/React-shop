@@ -12,10 +12,10 @@ const App = () => {
         <BrowserRouter>
             <Layout>
                 <Routes>
-                    <Route path="/" element={Home} />
-                    <Route exact path="/login" element={Login} />
-                    <Route exact path="recovery-password" element={RecoveryPassword} />    
-                    <Route path="*" element={NotFound} />    
+                    <Route path="/" element={<Home />} />
+                    <Route exact path="/login" element={<Login />} />
+                    <Route exact path="/recovery-password" element={<RecoveryPassword />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
